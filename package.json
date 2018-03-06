@@ -1,6 +1,6 @@
 {
   "name": "shopify-gid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Universal encoder/decoder for ID values returned from the Shopify Storefront GraphQL API.",
   "source": "index.js",
   "module": "dist/shopify-gid.es.js",
