@@ -11,9 +11,11 @@ npm i shopify-gid --save
 ```javascript
 import { encode, decode } from 'shopify-gid'
 
-encode('Product', 12345) // => Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEyMzQ1
-decode('Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEyMzQ1') // => { type: 'Product', id:
-'12345' }
+encode('Product', 12345)
+  // => Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEyMzQ1
+
+decode('Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEyMzQ1')
+  // => { type: 'Product', id: '12345' }
 ```
 
 ## License
