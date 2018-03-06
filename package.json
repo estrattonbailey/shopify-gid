@@ -6,6 +6,9 @@
   "module": "dist/shopify-gid.es.js",
   "main": "dist/shopify-gid.js",
   "umd:main": "dist/shopify-gid.umd.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "microbundle build",
     "watch": "microbundle watch"

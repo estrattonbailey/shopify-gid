@@ -1,2 +1,0 @@
-!function(e,o){"object"==typeof exports&&"undefined"!=typeof module?o(exports):"function"==typeof define&&define.amd?define(["exports"],o):o(e.shopifyGid={})}(this,function(e){e.decode=function(e){var o=("undefined"==typeof window?Buffer.from(e,"base64").toString("utf-8"):atob(e).split("shopify/")[1]).split("/");return{type:o[0],id:o[1]}},e.encode=function(e,o){var t="gid://shopify/"+e+"/"+o;return"undefined"==typeof window?Buffer.from(t,"utf-8").toString("base64"):btoa(t)}});
-//# sourceMappingURL=shopify-gid.umd.js.map
