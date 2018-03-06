@@ -1,0 +1,39 @@
+{
+  "name": "shopify-gid",
+  "version": "0.0.1",
+  "description": "Universal encoder/decoder for ID values returned from the Shopify Storefront GraphQL API.",
+  "source": "index.js",
+  "module": "dist/shopify-gid.es.js",
+  "main": "dist/shopify-gid.js",
+  "umd:main": "dist/shopify-gid.umd.js",
+  "scripts": {
+    "build": "microbundle build",
+    "watch": "microbundle watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/estrattonbailey/shopify-gid.git"
+  },
+  "keywords": [
+    "shopify",
+    "gid",
+    "storefront",
+    "api",
+    "graphql",
+    "shopify",
+    "graphql",
+    "shopify",
+    "id",
+    "id",
+    "gid://shopify"
+  ],
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estrattonbailey/shopify-gid/issues"
+  },
+  "homepage": "https://github.com/estrattonbailey/shopify-gid#readme",
+  "devDependencies": {
+    "microbundle": "^0.4.4"
+  }
+}
