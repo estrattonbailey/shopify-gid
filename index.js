@@ -1,11 +1,13 @@
 export function decode (str) {
-  const raw = typeof window === 'undefined' ? (
+  const raw = (typeof window === 'undefined' ? (
     Buffer.from(str, 'base64').toString('utf-8')
   ) : (
     atob(str) // eslint-disable-line no-undef
-  ).split('shopify/')[1]
+  )).split('shopify/')[1]
 
   const [ type, id ] = raw.split('/')
+
+  console.log(raw, type, id)
 
   const params = (id.split('?').slice(1)[0] || '').split('&').reduce((p, q) => {
     const [ key, value ] = q.split('=')
