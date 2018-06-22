@@ -7,8 +7,6 @@ export function decode (str) {
 
   const [ type, id ] = raw.split('/')
 
-  console.log(raw, type, id)
-
   const params = (id.split('?').slice(1)[0] || '').split('&').reduce((p, q) => {
     const [ key, value ] = q.split('=')
     p[key] = value
