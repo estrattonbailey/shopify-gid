@@ -1,8 +1,8 @@
 export function decode (str) {
   const raw = (typeof window === 'undefined' ? (
-    Buffer.from(str, 'base64').toString('utf-8')
+      str.lastIndexOf("gid://shopify/")===0?str:Buffer.from(str, 'base64').toString('utf-8')
   ) : (
-    atob(str) // eslint-disable-line no-undef
+      str.lastIndexOf("gid://shopify/")===0?str:atob(str) // eslint-disable-line no-undef
   )).split('shopify/')[1]
 
   const [ type, id ] = raw.split('/')

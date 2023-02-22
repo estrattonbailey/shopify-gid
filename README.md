@@ -11,9 +11,11 @@ npm i shopify-gid --save
 ```javascript
 import { encode, decode } from 'shopify-gid'
 ```
-## decode(base64hash)
+## decode(base64hash) OR decode(globalID)
 ```javascript
 decode('Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEyMzQ1...')
+        //OR
+decode('gid://shopify/Product/12345')
   // => { type: 'Product', id: '12345', params: { accessToken: 'abcde123' }, raw: 'Z2lkOi8...' }
 ```
 ## encode(type, id[, params])
